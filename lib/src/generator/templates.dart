@@ -5,6 +5,7 @@ String generateL10nDartFileContent(
     String className, List<Label> labels, List<String> locales,
     [bool otaEnabled = false]) {
   return """
+// @dart = 2.12
 // GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';${otaEnabled ? '\n${_generateLocalizelySdkImport()}' : ''}
